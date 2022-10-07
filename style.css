@@ -1,0 +1,154 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+}
+
+.container
+{
+  background-color: hsl(216, 50%, 16%);
+  max-width: 350px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.image img
+{
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+}
+
+.image
+{
+	position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image::after
+{
+  content: url(./images/icon-view.svg);
+  background: hsla(178, 100%, 50%, 0.5);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.25s ease;
+}
+
+.image:hover::after {
+  opacity: 1;
+}
+
+.text a
+{
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.text a h3
+{
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 22px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.text a h3:hover
+{
+  color: hsl(178, 100%, 50%);
+}
+
+.text a h3:visited
+{
+  text-decoration: none;
+}
+
+.text p
+{
+  color: hsl(216, 30%, 55%);
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.content
+{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+}
+
+.price, .days
+{
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.card__icon {
+  margin-right: 6px;
+}
+
+.price span
+{
+  color: hsl(178, 100%, 50%);
+}
+
+.days span
+{
+  color: hsl(216, 30%, 55%);
+}
+
+.avatar
+{
+  display: flex;
+  align-items: center;
+  border-top: 1px solid hsl(216, 30%, 55%);
+  padding-top: 15px;
+}
+
+.avatar img
+{
+  width: 34px;
+  height: 34px;
+  border: 2px solid white;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.avatar p
+{
+  color: hsl(216, 30%, 55%);
+  font-weight: 500;
+}
+
+.avatar a {
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.avatar a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
